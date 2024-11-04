@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background-color: #a9d9f1;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+}
+
+.canvas{
+    margin: auto;
+    display: flex;
+    flex-direction:row;
+    height: 95%;
+    width: 80%;
+    max-width: 1485px;
+    @media only screen and (max-width: 120vh) { 
+        flex-direction:column;
+        height: 100vh;
+        width: 100%;
+    }
+}
+
+.contenedor{
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.contenedor > div{
+    margin: 2EM;
+    border-radius: 50px;
+    background: #E6E8E6;
+    box-shadow:  28px 28px 52px #00000050,
+               -28px -28px 52px #ffffff50;
+    height: 100%;
+    @media only screen and (max-width: 120vh) { 
+        margin: 4%;
+    }
+}
+
+.dia{
+    margin: auto;
+    width: 30%;
+    @media only screen and (max-width: 120vh) { 
+        width: 100%;
+        min-height: 95vh;
+        height:  fit-content ;
+    }
+}
+
+p{
+    margin: auto;
+    margin: 10%;
+}
+
+
+.cell{
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    border: #a3a5a3 solid 1px;
+    border-radius: 10px;
+    max-width: 70%;
+    margin: auto;
+    margin-top: 2em;
+}
+.cell > *{
+    margin: 0;
+    margin-left: 5%;
+
+}
+
+input, select{
+    margin: 0.5em;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icono.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor</title>
+</head>
+<body>
+    <div class="canvas">
+        <div class="contenedor dia" > 
+            <div class="info">
+                <h3>Solicitar Turno</h3>
+                <p>Datos del paciente</p>
+                <textarea id="nombre" rows="1" cols="30" placeholder="Nombre completo"></textarea><br>
+                <textarea id="dni" rows="1" cols="30" placeholder="DNI"></textarea><br>
+                <textarea id="codigoSoc" rows="1" cols="30" placeholder="Codigo Socio"></textarea><br>
+                <textarea id="email" rows="1" cols="30" placeholder="e-mail"></textarea><br>
+                <p>Datos del turno</p>
+                Fecha
+                <input type="date" id="fecha" name="Fecha">
+                <br>
+                Hora
+                <select name="hora" id="hora">
+                    <option value="9:00">9:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                </select>
+                <br>
+                Doctor
+                <select name="doct" id="doctor">
+                    <option value="Dermatologo" selected>Dermatologo</option>
+                    <option value="Dentista">Dentista</option>
+                    <option value="Pediatra">Pediatra</option>
+                    <option value="Oftalmologo">Oftalmologo</option>
+                </select>
+                <br>
+                <button id="cargarFecha">Solicitar</button>
+            </div>    
+        </div>
+
+    </div>
+    
+</body>
+<script src="main.js"></script>
+</html>
